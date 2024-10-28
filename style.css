@@ -362,3 +362,119 @@ a {
         margin-right: auto;
     }
 }
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+    
+    .navbar ul li {
+        margin-left: 20px;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .home-info h1 {
+        font-size: 40px;
+    }
+
+    .home-info h2 {
+        font-size: 28px;
+    }
+
+    .home-info p {
+        font-size: 16px;
+    }
+
+    .home-img .img-box {
+        width: 45vw;
+        height: 45vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 5%;
+        background-color: #1f242d;
+    }
+
+    .navbar .logo {
+        margin-bottom: 10px;
+    }
+
+    /* Hide navbar links by default and show them when toggled */
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .navbar-toggle {
+        display: inline-block;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .home-info h1 {
+        font-size: 35px;
+    }
+
+    .home-info h2 {
+        font-size: 24px;
+    }
+
+    .home-info p {
+        font-size: 14px;
+    }
+
+    .home-img .img-box {
+        width: 55vw;
+        height: 55vw;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 3%;
+    }
+
+    .home-info h1 {
+        font-size: 28px;
+    }
+
+    .home-info h2 {
+        font-size: 20px;
+    }
+
+    .home-info p {
+        font-size: 12px;
+    }
+
+    .home-info .btn-sci {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .home-img .img-box {
+        width: 65vw;
+        height: 65vw;
+    }
+        }
